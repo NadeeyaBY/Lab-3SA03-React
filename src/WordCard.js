@@ -1,18 +1,40 @@
-import React from 'react';
+import React , { useState } from 'react';
 import CharacterCard from './CharacterCard';
+
+
+const prepareStateFromWord = given_word => {
+    let word = given_word.toUpperCase()
+    let chars = _.shuffle(Array.from(word))
+    return{
+        word,
+        chars,
+        attempt:1,
+        guess: '',
+        completer: false
+
+    }
+
+}
 
 
 export default function WordCard(props){
 
+    const [state, setState]= useState(prepareStateFromWord(props.value))
+
     const activationHandler = c => {
         console.log(`${c} has been activated.`)
+        
+        let guess = state.guess + c
+        setState({...state, guess})
+
+        console.log(guess)
 
     }
 
     return (
         <div>
             { 
-                Array.from(props.value).map((c, i) =>
+                state.chars.map((c, i) =>
                 <CharacterCard value={c} key={i} activationHandler={activationHandler}/>) 
             }
         </div>
