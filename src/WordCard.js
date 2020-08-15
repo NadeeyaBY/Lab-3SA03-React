@@ -4,8 +4,8 @@ import CharacterCard from './CharacterCard';
 
 export default function WordCard(props){
 
-    const activetionHandler = c => {
-        console.log(`${c} has been activated`)
+    const activationHandler = c => {
+        console.log(`${c} has been activated.`)
 
     }
 
@@ -13,7 +13,7 @@ export default function WordCard(props){
         <div>
             { 
                 Array.from(props.value).map((c, i) =>
-                    <CharacterCard value={c} key={i} activetionHandler={activetionHandler}/>) 
+                <CharacterCard value={c} key={i} activationHandler={activationHandler}/>) 
             }
         </div>
      );
