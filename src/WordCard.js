@@ -38,8 +38,7 @@ export default function WordCard(props){
                 }
             }
         }
-           
-        console.log(guess)
+      
 
     }
 
@@ -49,6 +48,5 @@ export default function WordCard(props){
                 state.chars.map((c, i) =>
                 <CharacterCard value={c} key={i} activationHandler={activationHandler}/>) 
             }
-        </div>
-     );
+        </div>);
 }
