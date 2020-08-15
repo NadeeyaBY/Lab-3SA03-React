@@ -1,7 +1,8 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
-import './App.css';
 import WordCard from './WordCard.js';
+import './App.css';
+
 
 const word = "Hello";
 function App() {
