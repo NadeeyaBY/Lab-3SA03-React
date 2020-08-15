@@ -9,7 +9,7 @@ const prepareStateFromWord = given_word => {
         word,
         chars,
         attempt:1,
-        guess: '',
+        guess: ' ',
         completer: false
 
     }
@@ -23,7 +23,7 @@ export default function WordCard(props){
 
     const activationHandler = c => {
         console.log(`${c} has been activated.`)
-        
+
         let guess = state.guess + c
         setState({...state, guess})
 
