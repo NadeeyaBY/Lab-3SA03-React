@@ -16,10 +16,11 @@ export default function WordCard(props){
                 console.log('yeah!')
                 setState({...state, completed: true})
             }else{
-                console.log('reset')
+                console.log('reset, next attempt')
                     setState({...state, guess: '', attempt: state.attempt + 1})
                 }
             }
+            console.log(guess)
         }
       
     return (
