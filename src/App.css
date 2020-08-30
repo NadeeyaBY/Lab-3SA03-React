@@ -1,7 +1,7 @@
 body {
     background-image: url("https://i.pinimg.com/originals/d4/e9/5e/d4e95e21032504253ee1959cb4d85411.jpg");
-    width: ;
-    height: ;
+    background-size: cover;
+
 }
 .card {
     background-image: url("https://www.imagineering.co.th/wp-content/uploads/2017/11/bg-imagineering.jpg");
@@ -15,6 +15,19 @@ body {
 }
  
 .activeCard {
-    color:skyblue;
+    /*color:skyblue;*/
     background: rgb(148, 196, 250);
 }   
+
+.cardlayout {
+    font-size: 15px;
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+  }
+  
+    h1 {
+    font-size: 50px;
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+  }
+  
