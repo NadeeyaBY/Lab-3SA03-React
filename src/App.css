@@ -1,8 +1,14 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/d4/e9/5e/d4e95e21032504253ee1959cb4d85411.jpg");
+    width: ;
+    height: ;
+}
 .card {
+    background-image: url("https://www.imagineering.co.th/wp-content/uploads/2017/11/bg-imagineering.jpg");
     display: inline-block;
     text-align: center;
     width: 3em;
-    font-size: 2em;
+    font-size: 3em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 1em;
     user-select: none;
@@ -10,5 +16,5 @@
  
 .activeCard {
     color:skyblue;
-    background: rgb(30, 133, 252);
+    background: rgb(148, 196, 250);
 }   
