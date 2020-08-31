@@ -23,18 +23,24 @@ body {
     font-size: 15px;
     font-family: "Lucida Console", Courier, monospace;
     text-align: center;
-  }
-  
-    h1 {
+}
+  h1 {
     font-size: 50px;
     font-family: "Lucida Console", Courier, monospace;
     text-align: center;
-}
+  }
 
-AttemptAndAnswer {
-    font-size: 22px;
+
+.AttemptAndAnswer {
+    font-size: 15px;
     font-family: "Lucida Console", Courier, monospace;
     text-align: center;
-  }
+}
+    h2 {
+        font-size: 20px;
+        font-family: "Lucida Console", Courier, monospace;
+        text-align: center;
+    }
+
   
   

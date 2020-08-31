@@ -2,7 +2,8 @@ import React , { useState } from 'react';
 import _, { attempt } from 'lodash';
 import CharacterCard from './CharacterCard';
 
-var temp = 0;
+var temp = " ";
+var yourcharacter = " ";
 
 const prepareStateFromWord = (given_word) => {
     let word = given_word.toUpperCase()
@@ -19,6 +20,8 @@ const prepareStateFromWord = (given_word) => {
 export default function WordCard(props){
 
     const [state, setState]= useState(prepareStateFromWord(props.value))
+    
+    yourcharacter = state.guess;
 
     const activationHandler = c => {
         console.log(`${c} has been activated.`)
@@ -43,6 +46,13 @@ export default function WordCard(props){
       
     return (
         <div>
+            <div class="AttemptAndAnswer">
+                <h2> Attempt : {temp}
+                <br></br>
+                <br></br>
+                Your Answer : {yourcharacter}</h2>
+            </div>
+            
             { 
                 state.chars.map((c, i) =>
                 <CharacterCard value={c} key={i} activationHandler={activationHandler} attempt={state.attempt}/>) 
